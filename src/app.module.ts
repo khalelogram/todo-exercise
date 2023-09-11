@@ -12,9 +12,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       type: 'postgres',
       host: 'localhost',
       port: 5432,
-      username: process.env.DB_USERNAME || 'postgres',
-      password: process.env.DB_PASSWORD || 'tunerPg@789',
-      database: process.env.DB_NAME || 'examdb',
+      username: 'test-db-username',
+      password: 'test-db-password',
+      database: 'test-db-name-test-test',
       autoLoadEntities: true,
       synchronize: true,
       logging: true
